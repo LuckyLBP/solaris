@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(6, 6, 66, 1) 76%,
+    rgba(4, 16, 66, 1) 100%
+  );
+}
+.title {
+  text-align: right;
+  margin: 4rem 4rem 0 0;
+}
+.title h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3em;
+  color: #fff;
+}
+.title h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #dcb61f;
+  letter-spacing: 10px;
+}
+
+.universe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 75vh;
+}
+
+.planet {
+  background-color: black;
+  border-radius: 50%;
+  padding: 5rem;
+  position: relative;
+}
+
+.sun {
+  background-color: #ffcc00;
+  padding: 25rem;
+  position: absolute;
+  left: -35%;
+}
+
+.mercury {
+  padding: 1rem;
+  margin-left: 10rem;
+}
+
+.venus {
+  padding: 1.5rem;
+  background-color: antiquewhite;
+}
+
+.earth {
+  padding: 1.5rem;
+  background-color: blue;
+}
+
+.mars {
+  padding: 1rem;
+  background-color: red;
+}
+.jupiter {
+  padding: 10rem;
+  background-color: orange;
+}
+.saturn {
+  background-color: #dcb61f;
+}
+.saturn::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 10px;
+  background-color: white;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  rotate: -30deg;
+  border-radius: 50%;
+  opacity: 40%;
+}
+
+.uranus {
+  padding: 3rem;
+  background-color: antiquewhite;
+}
+.neptune {
+  padding: 3rem;
+  background-color: grey;
+}
+
+/***** PLANET PAGE *****/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    max-width: 100vw;
+    position: relative; 
+}
+
+.sidePlanet {
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%); 
+}
+
+.info {
+    max-width: 40%;
+    text-align: left;
+}
+
+.info h1 {
+    font-size: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+        
+}
+
+.info h2 {
+    font-size: 2.5em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #dcb61f;
+    margin-bottom: 2rem;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.info p {
+    font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+}
+
+hr {
+    margin: 2rem 0;
+    opacity: 40%;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.stats h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.stats p {
+    font-weight: 100;
+}
+
+.moons h3 {
+    color: #fff;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.moons p {
+    font-weight: 100;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/***** PLANET PAGES *****/
+
+.earthBig, .jupiterBig, .marsBig, .mercuryBig, .neptuneBig, .saturnBig, .sunBig, .uranusBig, .venusBig {
+  border-radius: 50%;
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  top: 50%;
+  left: -40rem; 
+  transform: translateY(-50%);
+  opacity: 70%;
+}
+
+.earthBig {
+  background-color: #0000ff;
+  box-shadow:
+    0 0 0 2em #0000e6,
+    0 0 0 4em #0000cc;
+}
+
+.jupiterBig {
+  background-color: #ff4500;
+  box-shadow:
+    0 0 0 2em #e63e00,
+    0 0 0 4em #cc3700;
+}
+
+.marsBig {
+  background-color: #ff0000;
+  box-shadow:
+    0 0 0 2em #e60000,
+    0 0 0 4em #cc0000;
+}
+
+.mercuryBig {
+  background-color: #696969;
+  box-shadow:
+    0 0 0 2em #606060,
+    0 0 0 4em #555555;
+}
+
+.neptuneBig {
+  background-color: #4169e1;
+  box-shadow:
+    0 0 0 2em #3a5fc8,
+    0 0 0 4em #3454b0;
+}
+
+.saturnBig {
+  background-color: #dcb61f;
+  box-shadow:
+    0 0 0 2em #c4a81a,
+    0 0 0 4em #ac9516;
+}
+
+.sunBig {
+  background-color: #ffd700;
+  box-shadow:
+    0 0 0 2em #e6c400,
+    0 0 0 4em #cca200;
+}
+
+.uranusBig {
+  background-color: #00ced1;
+  box-shadow:
+    0 0 0 2em #00b8c4,
+    0 0 0 4em #009da8;
+}
+
+.venusBig {
+  background-color: #fffacd;
+  box-shadow:
+    0 0 0 2em #fff2b8,
+    0 0 0 4em #ffe8a3;
+}
+
+
+
