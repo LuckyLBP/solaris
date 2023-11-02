@@ -1,9 +1,13 @@
+
+
+/***** Normaliserad CSS *****/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/***** Bakgrund *****/
 body {
   width: 100vw;
   height: 100vh;
@@ -15,6 +19,8 @@ body {
     rgba(4, 16, 66, 1) 100%
   );
 }
+
+/***** Titlar *****/
 .title {
   text-align: right;
   margin: 4rem 4rem 0 0;
@@ -30,14 +36,17 @@ body {
   letter-spacing: 10px;
 }
 
+/***** Ser till att alla planeter är i samma våglängd *****/
 .universe {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 4rem;
   height: 75vh;
 }
 
+/***** Allmänna stilar för alla planeter *****/
 .planet {
   background-color: black;
   border-radius: 50%;
@@ -78,6 +87,8 @@ body {
 .saturn {
   background-color: #dcb61f;
 }
+
+/***** För att göra en linje i saturnus planeten *****/
 .saturn::before {
   content: "";
   position: absolute;
@@ -192,6 +203,7 @@ hr {
 }
 /***** PLANET PAGES *****/
 
+/***** Allmänna stilar för alla planeter *****/
 .earthBig, .jupiterBig, .marsBig, .mercuryBig, .neptuneBig, .saturnBig, .sunBig, .uranusBig, .venusBig {
   border-radius: 50%;
   position: absolute;
@@ -265,6 +277,3 @@ hr {
     0 0 0 2em #fff2b8,
     0 0 0 4em #ffe8a3;
 }
-
-
-
